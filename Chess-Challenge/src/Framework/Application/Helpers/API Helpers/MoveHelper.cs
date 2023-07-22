@@ -42,7 +42,8 @@ namespace ChessChallenge.Application.APIHelpers
                         PieceType.Rook => Chess.Move.PromoteToRookFlag,
                         PieceType.Knight => Chess.Move.PromoteToKnightFlag,
                         PieceType.Bishop => Chess.Move.PromoteToBishopFlag,
-                        _ => 0
+                        // This fixes stockfish illegal moves (it doesn't specify promotion piece type)
+                        _ => Chess.Move.PromoteToQueenFlag
                     };
                 }
                 else
