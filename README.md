@@ -77,4 +77,5 @@ All names (variables, functions, etc.) are counted as a single token, regardless
 * `GetPiece()` function is giving a null piece after making a move
   * Please make sure you are using the latest version of the project, there was a bug with this function in the original version
 * There is a community-run discord server [over here](https://github.com/SebLague/Chess-Challenge/discussions/156).
+* You can download Stockfish from [here](https://github.com/official-stockfish/Stockfish) - it should work with any other engine that supports UCI protocol
   
